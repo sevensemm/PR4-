@@ -7,8 +7,8 @@
 
     <style>
         .BackFoto {
-        background:no-repeat;
-        background-size: 100%;
+            background:no-repeat;
+            background-size: cover;
         }
         .OpenText {
             font-size: 60px;
@@ -20,7 +20,6 @@
             display:flex;
             align-items: center;
             flex-direction: column;
-
             
         }
 
@@ -33,7 +32,7 @@
             flex-wrap: wrap;
 
             gap: 16px;
-            height: 900px;
+            height: 100%;
             width: 1000px;                
         }
 
@@ -41,6 +40,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             border-radius: 20px;
             background-color: aliceblue;
             height: 320px;      
@@ -63,12 +63,79 @@
             font-size: 55px;
             font-style: normal;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-top: 40px;
+            
         }
         p{
             margin-left:20px;
             margin-right:20px;
             font-size: 13px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .OpenText{
+                font-size: 40px;
+            }
+            p{
+                font-size: 11px;                
+            }
+            .Kartochka{
+                height: 290px;      
+                width: 280px; 
+            }
+            .Text {          
+                gap: 16px;                
+                width: 1000px;                
+            }
+            h1 {            
+                font-size: 40px;   
+            }
+            a{
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width: 1020px) {
+            .OpenText{
+                font-size: 30px;
+            }
+            p{
+                font-size: 10px;                
+            }
+            .Kartochka{
+                height: 210px;      
+                width: 210px; 
+            }
+            .Text {          
+                gap: 16px;                
+                width: 800px;                
+            }
+            h1 {            
+                font-size: 30px;       
+            }
+            a{
+                font-size: 11px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .OpenText{
+                font-size: 25px;
+            }
+            p{
+                font-size: 5px;                
+            }
+            .Kartochka{
+                height: 120px;      
+                width: 120px;                 
+            }
+            .Text {          
+                gap: 5px;                
+                width: 400px;                
+            }
+            h1 {            
+                font-size: 20px;       
+            }
+            a{
+                font-size: 8px;
+            }
         }
         
     </style>
